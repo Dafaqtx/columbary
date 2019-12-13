@@ -1,0 +1,43 @@
+// hero
+.hero
+    height: 100vh
+    background: url('../img/hero/hero-bg.jpg') center top / 1440px no-repeat
+    position: relative
+
+    &__title
+        margin-top: 40px
+        margin-bottom: 60px
+
+    &__desc
+        max-width: 520px
+        line-height: 24px
+
+    .container
+        padding-top: 40vh
+
+    &__urn
+        max-width: 400px
+        position: absolute
+        right: 125px
+        top: 15%
+
+.scroll-bottom
+    background: #000
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    border: none
+    animation: arrow 1.5s infinite linear
+    position: absolute
+    bottom: 100px
+    left: 50%
+    outline: none
+    display: flex
+
+    &::before
+        content: ''
+        display: block
+        margin: auto
+        width: 23px
+        height: 15px
+        background: url('../img/hero/arrow-down.png') center / cover no-repeat
