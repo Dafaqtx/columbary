@@ -11,6 +11,8 @@ const rename = require("gulp-rename");
 const autoprefixer = require("gulp-autoprefixer");
 const notify = require("gulp-notify");
 const ghPages = require("gulp-gh-pages");
+const sourcemaps = require("gulp-sourcemaps");
+const gcmq = require("gulp-group-css-media-queries");
 
 gulp.task("browser-sync", function() {
   browserSync({
@@ -35,7 +37,8 @@ gulp.task("styles", function() {
     )
     .pipe(rename({ suffix: ".min", prefix: "" }))
     .pipe(autoprefixer(["last 15 versions"]))
-    .pipe(cleancss({ level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
+    .pipe(cleancss({ level: { 1: { specialComments: 0 } } }))
+    .pipe(gcmq())
     .pipe(gulp.dest("app/css"))
     .pipe(browserSync.stream());
 });
