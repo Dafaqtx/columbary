@@ -26,13 +26,14 @@
     &__desc
         font-size: 18px
         line-height: 26px
-        max-width: 520px
+        max-width: 600px
         font-weight: 500
+        margin-bottom: 50px
 
         @include respond-to(lg)
             font-size: 14px
             line-height: normal
-            max-width: 320px
+            max-width: 450px
 
         @include respond-to(md)
             font-size: 12px
@@ -41,28 +42,12 @@
         @include respond-to(xs)
             margin-bottom: 40px
 
-    &__img 
-        height: 1000px
-        width: 1000px
-        position: absolute
-        right: -10px
-        top: 0
-        background: grey
+    &__img
+        margin-left: auto
 
         @include respond-to(lg)
-            max-width: 600px
-            height: 500px
-            right: 0
+            max-width: 90%
 
         @include respond-to(md)
-            max-width: 540px
-            height: 520px
-
-        @include respond-to(sm)
-            right: -200px
-
-        @include respond-to(xs)
-            height: 330px
-            width: 100%
-            right: auto
-            position: static
+            max-width: 100%
+      
