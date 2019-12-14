@@ -11,6 +11,10 @@
     @include respond-to(md)
         padding-bottom: 150px
 
+    @include respond-to(xs)
+        padding-top: 0
+        padding-bottom: 40px
+
     &__title
         margin-top: 40px
         margin-bottom: 60px
@@ -34,6 +38,9 @@
             font-size: 12px
             max-width: 240px
 
+        @include respond-to(xs)
+            margin-bottom: 40px
+
     &__img 
         height: 1000px
         width: 1000px
@@ -53,3 +60,9 @@
 
         @include respond-to(sm)
             right: -200px
+
+        @include respond-to(xs)
+            height: 330px
+            width: 100%
+            right: auto
+            position: static

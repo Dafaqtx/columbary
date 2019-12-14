@@ -6,11 +6,17 @@
     @include respond-to(lg)
         margin-bottom: 100px
 
+    @include respond-to(xs)
+        margin-bottom: 0
+
     &__img
         display: block
 
         @include respond-to(lg)
             padding-top: 100px
+
+        @include respond-to(xs)
+            padding-top: 200px
 
     &__wrapper
         padding-top: 50px
@@ -35,6 +41,10 @@
         @include respond-to(sm)
             margin-left: 50px
 
+        @include respond-to(xs)
+            margin-left: 0
+            max-width: 180px
+
     &__list
         display: flex
         justify-content: space-between
@@ -45,6 +55,10 @@
 
         @include respond-to(lg)
             margin-top: 50px
+
+        @include respond-to(xs)
+            flex-direction: column
+            align-items: center
 
     &__item
         max-width: 430px
@@ -62,6 +76,9 @@
         @include respond-to(sm)
             max-width: 240px
             padding-bottom: 15px
+
+        @include respond-to(xs)
+            margin-bottom: 40px
 
     &__name
         font-size: 30px
@@ -148,3 +165,6 @@
             @include respond-to(sm)
                 max-width: 70px
                 left: calc(100% + 55px)
+
+            @include respond-to(xs)
+                left: calc(100% - 200px)

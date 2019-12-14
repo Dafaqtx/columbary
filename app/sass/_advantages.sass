@@ -38,6 +38,9 @@
             font-size: 12px
             max-width: 300px
 
+        @include respond-to(xs)
+            margin-left: 0
+
     &__list
         display: flex
         justify-content: space-between
@@ -45,6 +48,10 @@
 
         @include respond-to(lg)
             margin-top: 90px
+
+        @include respond-to(xs)
+            flex-wrap: wrap
+            margin-top: 80px
 
     &__icon
         img 
@@ -58,6 +65,11 @@
 
         @include respond-to(sm)
             max-width: 120px
+
+        @include respond-to(xs)
+            width: 50%
+            max-width: 100%
+            margin-bottom: 50px
 
     &__name
         font-size: 20px

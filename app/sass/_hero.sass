@@ -14,6 +14,11 @@
     @include respond-to(sm)
         height: 50vh
         background-size: 90%
+
+    @include respond-to(xs)
+        height: auto
+        background-size: 210%
+        background-position-x: -370px
         
 
     &__title
@@ -22,6 +27,9 @@
 
         @include respond-to(lg)
             margin-bottom: 20px
+
+        @include respond-to(xs)
+            margin-top: 20px
 
     &__desc
         max-width: 520px
@@ -40,6 +48,10 @@
             font-size: 10px
             max-width: 290px
 
+        @include respond-to(xs)
+            max-width: 260px
+            font-size: 12px
+
     .container
         padding-top: 40vh
 
@@ -51,6 +63,9 @@
 
         @include respond-to(sm)
             padding-top: 20vh
+
+        @include respond-to(xs)
+            padding-top: 50vh
 
     &__urn
         max-width: 400px
@@ -69,6 +84,10 @@
         @include respond-to(sm)
             right: 0
             top: 10%
+
+        @include respond-to(xs)
+            top: 12%
+            right: 10px
 
 .scroll-bottom
     background: #000
@@ -89,6 +108,9 @@
 
     @include respond-to(md)
         bottom: 0
+
+    @include respond-to(xs)
+        display: none
 
     &::before
         content: ''
