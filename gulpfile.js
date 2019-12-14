@@ -45,6 +45,7 @@ gulp.task("js", function() {
     .src([
       "app/libs/jquery/dist/jquery.min.js",
       "app/libs/magnific-popup/dist/jquery.magnific-popup.min.js",
+      "app/js/map.js",
       "app/js/common.js"
     ])
     .pipe(concat("scripts.min.js"))
@@ -54,7 +55,7 @@ gulp.task("js", function() {
 
 gulp.task("watch", ["styles", "js", "browser-sync"], function() {
   gulp.watch("app/sass/**/*.sass", ["styles"]);
-  gulp.watch(["libs/**/*.js", "app/js/common.js"], ["js"]);
+  gulp.watch(["libs/**/*.js", "app/js/*.js"], ["js"]);
   gulp.watch("app/*.html", browserSync.reload);
 });
 
