@@ -2,6 +2,9 @@
 .decision
     margin-bottom: 150px
 
+    @include respond-to(md)
+        margin-bottom: 30px
+
     &__row
         display: flex
         max-width: 1365px
@@ -37,6 +40,10 @@
 
             @include respond-to(lg)
                 width: 440px
+
+            @include respond-to(lg)
+                width: 400px
+                left: 20px
 
     &__list
         list-style: none

@@ -15,6 +15,10 @@
         @include respond-to(lg)
             margin-bottom: 20px
 
+        @include respond-to(md)
+            max-width: 370px
+            line-height: 36px
+
     &__desc
         font-size: 18px
         line-height: 20px
@@ -41,6 +45,9 @@
 
     &__item
         max-width: 210px
+
+        @include respond-to(md)
+            max-width: 150px
 
     &__name
         font-size: 20px

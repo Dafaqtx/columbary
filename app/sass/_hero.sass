@@ -7,6 +7,10 @@
     @include respond-to(lg)
         background-size: 70%
 
+    @include respond-to(md)
+        height: 70vh
+        background-size: 80%
+
     &__title
         margin-top: 40px
         margin-bottom: 60px
@@ -23,11 +27,18 @@
             font-size: 14px
             line-height: normal
 
+        @include respond-to(md)
+            max-width: 390px    
+            font-size: 12px
+
     .container
         padding-top: 40vh
 
         @include respond-to(lg)
             padding-top: 35vh
+
+        @include respond-to(md)
+            padding-top: 25vh
 
     &__urn
         max-width: 400px
@@ -38,6 +49,10 @@
         @include respond-to(lg)
             max-width: 250px
             top: 20%
+
+        @include respond-to(md)
+            max-width: 200px
+            top: 30%
 
 .scroll-bottom
     background: #000
@@ -55,6 +70,9 @@
     @include respond-to(lg)
         width: 30px
         height: 30px
+
+    @include respond-to(md)
+        bottom: 0
 
     &::before
         content: ''

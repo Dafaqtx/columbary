@@ -8,6 +8,9 @@
         padding-top: 100px
         padding-bottom: 250px
 
+    @include respond-to(md)
+        padding-bottom: 150px
+
     &__title
         margin-top: 40px
         margin-bottom: 60px
@@ -27,6 +30,10 @@
             line-height: normal
             max-width: 320px
 
+        @include respond-to(md)
+            font-size: 12px
+            max-width: 240px
+
     &__img 
         height: 1000px
         width: 1000px
@@ -39,3 +46,7 @@
             max-width: 600px
             height: 500px
             right: 0
+
+        @include respond-to(md)
+            max-width: 540px
+            height: 520px

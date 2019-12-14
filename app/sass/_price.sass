@@ -40,6 +40,9 @@
             max-width: 300px
             padding: 20px
 
+        @include respond-to(md)
+            max-width: 270px
+
     &__name
         font-size: 30px
         line-height: 30px
@@ -52,6 +55,11 @@
             line-height: 18px
             margin-bottom: 20px
 
+        @include respond-to(md)
+            font-size: 16px
+            line-height: normal
+            margin-bottom: 10px
+
     &__cost
         display: block
         font-size: 18px
@@ -60,7 +68,11 @@
 
         @include respond-to(lg)
             font-size: 14px
+            line-height: normal
             margin-bottom: 10px
+
+        @include respond-to(md)
+            font-size: 12px
 
     &__sub
         max-width: 240px
@@ -75,6 +87,11 @@
             max-width: 100%
             font-size: 14px
             margin-bottom: 20px
+
+        @include respond-to(md)
+            font-size: 12px
+            line-height: normal
+            margin-bottom: 10px
 
     &__btn
         border: none
@@ -102,3 +119,8 @@
 
             @include respond-to(lg)
                 left: -130%
+
+            @include respond-to(md)
+                max-width: 100px
+                top: 8px
+                left: -100%
