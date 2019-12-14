@@ -11,6 +11,11 @@
         height: 70vh
         background-size: 80%
 
+    @include respond-to(sm)
+        height: 50vh
+        background-size: 90%
+        
+
     &__title
         margin-top: 40px
         margin-bottom: 60px
@@ -31,6 +36,10 @@
             max-width: 390px    
             font-size: 12px
 
+        @include respond-to(sm)
+            font-size: 10px
+            max-width: 290px
+
     .container
         padding-top: 40vh
 
@@ -39,6 +48,9 @@
 
         @include respond-to(md)
             padding-top: 25vh
+
+        @include respond-to(sm)
+            padding-top: 20vh
 
     &__urn
         max-width: 400px
@@ -53,6 +65,10 @@
         @include respond-to(md)
             max-width: 200px
             top: 30%
+
+        @include respond-to(sm)
+            right: 0
+            top: 10%
 
 .scroll-bottom
     background: #000

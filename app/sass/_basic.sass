@@ -28,35 +28,6 @@ img
 	clip-path: inset(50%)
 	margin: -1px
 			
-.flex
-	display: flex
-	flex-direction: row
-	flex-wrap: wrap
-
-	&--align-right
-		justify-content: flex-end
-
-	&--align-center
-		justify-content: center
-
-	&--align-justify
-		justify-content: space-between
-
-	&--align-spaced
-		justify-content: space-around
-
-	&--align-top
-		align-items: flex-start
-
-	&--align-bottom
-		align-items: flex-end
-
-	&--align-middle
-		align-items: center
-
-	&--align-stretch
-		align-items: stretch
-
 .wrapper
 	position: relative
 	padding: 0 45px
@@ -101,6 +72,9 @@ img
 	@include respond-to(md)
 		font-size: 40px
 
+	@include respond-to(sm)
+		font-size: 35px
+		line-height: 30px
 
 button
 	cursor: pointer
@@ -119,6 +93,10 @@ button
 		border-color: #000000
 		transition: all .3s ease
 
+	@include respond-to(sm)
+		font-size: 12px
+		width: 140px
+
 .count
 	font-size: 78px
 	line-height: 55px
@@ -130,6 +108,9 @@ button
 	@include respond-to(md)
 		font-size: 43px
 
+	@include respond-to(sm)
+		margin-left: -50px
+
 .sect__offset
 	margin-left: 85px
 
@@ -138,6 +119,9 @@ button
 
 	@include respond-to(md)
 		margin-left: 70px
+
+	@include respond-to(sm)
+		margin-left: 0
 
 @-webkit-keyframes arrow 
 	0% 

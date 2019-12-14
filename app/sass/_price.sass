@@ -7,6 +7,8 @@
         margin-bottom: 100px
 
     &__img
+        display: block
+
         @include respond-to(lg)
             padding-top: 100px
 
@@ -16,11 +18,22 @@
         width: 100%
         position: absolute
 
+    .container
+        @include respond-to(lg)
+            max-width: 750px
+    
+    .count
+        @include respond-to(sm)
+            margin-left: 0
+
     &__title
         margin-top: 50px
 
         @include respond-to(lg)
             margin-top: 30px
+
+        @include respond-to(sm)
+            margin-left: 50px
 
     &__list
         display: flex
@@ -29,6 +42,9 @@
 
         @include respond-to(lg)
             margin-top: 70px
+
+        @include respond-to(lg)
+            margin-top: 50px
 
     &__item
         max-width: 430px
@@ -42,6 +58,10 @@
 
         @include respond-to(md)
             max-width: 270px
+
+        @include respond-to(sm)
+            max-width: 240px
+            padding-bottom: 15px
 
     &__name
         font-size: 30px
@@ -124,3 +144,7 @@
                 max-width: 100px
                 top: 8px
                 left: -100%
+
+            @include respond-to(sm)
+                max-width: 70px
+                left: calc(100% + 55px)

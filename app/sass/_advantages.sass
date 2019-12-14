@@ -6,6 +6,9 @@
     @include respond-to(lg)
         margin-bottom: 140px
 
+    @include respond-to(sm)
+        margin-bottom: 40px
+
     &__title
         max-width: 650px
         line-height: 50px
@@ -31,6 +34,10 @@
             max-width: 400px
             font-weight: 500
 
+        @include respond-to(sm)
+            font-size: 12px
+            max-width: 300px
+
     &__list
         display: flex
         justify-content: space-between
@@ -49,6 +56,9 @@
         @include respond-to(md)
             max-width: 150px
 
+        @include respond-to(sm)
+            max-width: 120px
+
     &__name
         font-size: 20px
         line-height: 24px
@@ -58,3 +68,6 @@
         @include respond-to(lg)
             font-size: 14px
             line-height: normal
+
+        @include respond-to(sm)
+            font-size: 12px
