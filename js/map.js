@@ -57,7 +57,20 @@ function init() {
       address: "Москва, Россия",
       lat: 55.8716,
       lng: 37.345,
-      vicinity: "Moscow"
+      vicinity: "Moscow",
+      iw: {
+        address: true,
+        desc: true,
+        email: true,
+        enable: true,
+        int_tel: true,
+        open: true,
+        open_hours: true,
+        photo: true,
+        tel: true,
+        title: true,
+        web: true
+      }
     }
   ];
 
