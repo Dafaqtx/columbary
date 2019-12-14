@@ -1,9 +1,15 @@
 // contacts
 .contacts
 
+    @include respond-to(lg)
+        padding-top: 20px
+
     &__title
         margin-top: 30px
         margin-bottom: 50px
 
     #map
         height: 540px
+
+        @include respond-to(lg)
+            height: 350px

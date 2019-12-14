@@ -4,15 +4,28 @@
     padding-bottom: 550px
     padding-top: 200px
 
+    @include respond-to(lg)
+        padding-top: 100px
+        padding-bottom: 250px
+
     &__title
         margin-top: 40px
         margin-bottom: 60px
+
+        @include respond-to(lg)
+            margin-top: 20px
+            margin-bottom: 30px
 
     &__desc
         font-size: 18px
         line-height: 26px
         max-width: 520px
         font-weight: 500
+
+        @include respond-to(lg)
+            font-size: 14px
+            line-height: normal
+            max-width: 320px
 
     &__img 
         height: 1000px
@@ -22,6 +35,7 @@
         top: 0
         background: grey
 
-        @media screen and (max-width: $lg)
-            max-width: 40%
-            height: 400px
+        @include respond-to(lg)
+            max-width: 600px
+            height: 500px
+            right: 0

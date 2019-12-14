@@ -16,9 +16,15 @@
             font-size: 18px
             margin: 0
 
+            @include respond-to(lg)
+                font-size: 14px
+
     &__tel
         a   
             font-size: 18px
             display: block
             text-decoration: none
             color: $text
+
+            @include respond-to(lg)
+                font-size: 14px

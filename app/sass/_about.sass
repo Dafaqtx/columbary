@@ -6,13 +6,30 @@
     height: 1140px
     background: url('../img/about/about-bg.png') left top / 100% no-repeat
 
+    @include respond-to(lg)
+        height: 800px
+        margin-bottom: 100px
+        margin-top: 200px
+        padding-top: 0
+
+    .container
+        @include respond-to(lg)
+            max-width: 1280px
+
     .about__content
         max-width: 670px
         margin-left: auto
 
+        @include respond-to(lg)
+            max-width: 600px
+
     &__title
         margin-top: 50px
         margin-bottom: 70px
+
+        @include respond-to(lg)
+            margin-top: 20px
+            margin-bottom: 40px
 
     &__desc
         line-height: 23px

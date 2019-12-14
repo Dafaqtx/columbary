@@ -4,22 +4,40 @@
     background: url('../img/hero/hero-bg.jpg') center top / 1440px no-repeat
     position: relative
 
+    @include respond-to(lg)
+        background-size: 70%
+
     &__title
         margin-top: 40px
         margin-bottom: 60px
+
+        @include respond-to(lg)
+            margin-bottom: 20px
 
     &__desc
         max-width: 520px
         line-height: 24px
 
+        @include respond-to(lg)
+            max-width: 420px
+            font-size: 14px
+            line-height: normal
+
     .container
         padding-top: 40vh
+
+        @include respond-to(lg)
+            padding-top: 35vh
 
     &__urn
         max-width: 400px
         position: absolute
         right: 125px
         top: 15%
+
+        @include respond-to(lg)
+            max-width: 250px
+            top: 20%
 
 .scroll-bottom
     background: #000
@@ -34,6 +52,10 @@
     outline: none
     display: flex
 
+    @include respond-to(lg)
+        width: 30px
+        height: 30px
+
     &::before
         content: ''
         display: block
@@ -41,3 +63,7 @@
         width: 23px
         height: 15px
         background: url('../img/hero/arrow-down.png') center / cover no-repeat
+
+        @include respond-to(lg)
+            width: 15px
+            height: 8px

@@ -2,6 +2,13 @@
 .price
     position: relative
     margin-bottom: 180px
+    
+    @include respond-to(lg)
+        margin-bottom: 100px
+
+    &__img
+        @include respond-to(lg)
+            padding-top: 100px
 
     &__wrapper
         padding-top: 50px
@@ -12,10 +19,16 @@
     &__title
         margin-top: 50px
 
+        @include respond-to(lg)
+            margin-top: 30px
+
     &__list
         display: flex
         justify-content: space-between
         margin-top: 140px
+
+        @include respond-to(lg)
+            margin-top: 70px
 
     &__item
         max-width: 430px
@@ -23,7 +36,7 @@
         padding: 50px 50px 20px 50px
         border: 1px solid #000
 
-        @media screen and (max-width: $lg)
+        @include respond-to(lg)
             max-width: 300px
             padding: 20px
 
@@ -34,11 +47,20 @@
         margin-top: 0
         margin-bottom: 40px
 
+        @include respond-to(lg)
+            font-size: 20px
+            line-height: 18px
+            margin-bottom: 20px
+
     &__cost
         display: block
         font-size: 18px
         line-height: 26px
         margin-bottom: 15px
+
+        @include respond-to(lg)
+            font-size: 14px
+            margin-bottom: 10px
 
     &__sub
         max-width: 240px
@@ -48,6 +70,11 @@
         font-weight: bold
         min-height: 40px
         margin-bottom: 50px
+
+        @include respond-to(lg)
+            max-width: 100%
+            font-size: 14px
+            margin-bottom: 20px
 
     &__btn
         border: none
@@ -59,6 +86,9 @@
         position: relative
         outline: none
 
+        @include respond-to(lg)
+            font-size: 12px
+
         &::before
             content: ''
             display: block
@@ -69,3 +99,6 @@
             left: -120%
             top: 10px
             position: absolute
+
+            @include respond-to(lg)
+                left: -130%
