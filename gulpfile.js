@@ -20,9 +20,6 @@ gulp.task("browser-sync", function() {
       baseDir: "app"
     },
     notify: false
-    // open: false,
-    // online: false, // Work Offline Without Internet Connection
-    // tunnel: true, tunnel: "projectname", // Demonstration page: http://projectname.localtunnel.me
   });
 });
 
@@ -44,17 +41,15 @@ gulp.task("styles", function() {
 });
 
 gulp.task("js", function() {
-  return (
-    gulp
-      .src([
-        "app/libs/jquery/dist/jquery.min.js",
-        "app/js/common.js" // Always at the end
-      ])
-      .pipe(concat("scripts.min.js"))
-      // .pipe(uglify()) // Mifify js (opt.)
-      .pipe(gulp.dest("app/js"))
-      .pipe(browserSync.reload({ stream: true }))
-  );
+  return gulp
+    .src([
+      "app/libs/jquery/dist/jquery.min.js",
+      "app/libs/magnific-popup/dist/jquery.magnific-popup.min.js",
+      "app/js/common.js"
+    ])
+    .pipe(concat("scripts.min.js"))
+    .pipe(gulp.dest("app/js"))
+    .pipe(browserSync.reload({ stream: true }));
 });
 
 gulp.task("watch", ["styles", "js", "browser-sync"], function() {
@@ -73,13 +68,12 @@ gulp.task("img", function() {
     .pipe(
       cache(
         imagemin({
-          // .pipe(imagemin({
           interlaced: true,
           progressive: true,
           svgoPlugins: [{ removeViewBox: false }],
           use: [pngquant()]
         })
-      ) /**/
+      )
     )
     .pipe(gulp.dest("dist/img"));
 });

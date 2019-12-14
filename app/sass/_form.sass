@@ -1,0 +1,36 @@
+// form
+.form
+
+    &-row
+        width: 100%
+        margin-bottom: 50px
+
+        @include respond-to(lg)
+            margin-bottom: 30px
+
+        &--center
+            display: flex
+            align-items: center
+            justify-content: center
+
+    &__input    
+        width: 100%
+        font-size: 18px
+        border-color: #000000
+        border: none
+        border-bottom: 1px solid #000000
+        padding: 5px 0
+        background: transparent
+        outline: none
+        font-weight: 500
+
+        @include respond-to(lg)
+            font-size: 16px
+        
+        &::placeholder
+            font-weight: 300
+            color: #000000
+
+    input[type="checkbox"] + label
+        margin-left: 10px
+            

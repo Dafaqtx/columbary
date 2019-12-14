@@ -32,4 +32,13 @@ $(function() {
       }
     });
   });
+
+  $(".js-open-modal").magnificPopup({
+    items: {
+      src: "#modal-form",
+      type: "inline",
+      midClick: true,
+      mainClass: "mfp-fade"
+    }
+  });
 });
