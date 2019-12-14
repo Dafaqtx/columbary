@@ -13,7 +13,7 @@ function bindInfoWindow(marker, map, infowindow, html) {
 
 function init() {
   var mapOptions = {
-    center: new google.maps.LatLng(55.804858, 37.590193),
+    center: new google.maps.LatLng(55.871093, 37.344695),
     zoom: 16,
     gestureHandling: "auto",
     fullscreenControl: false,
@@ -53,49 +53,11 @@ function init() {
   var map = new google.maps.Map(mapElement, mapOptions);
   var locations = [
     {
-      title: "SKL Tech",
+      title: "Коламбарий",
       address: "Москва, Россия",
-      desc: "",
-      tel: "",
-      int_tel: "",
-      email: "",
-      web: "https://savcity.ru/",
-      web_formatted: "",
-      open: "",
-      time: "",
-      lat: 55.804858,
-      lng: 37.590193,
-      vicinity: "Moscow",
-      marker: {
-        fillColor: "#F44336",
-        fillOpacity: 1,
-        strokeWeight: 0,
-        scale: 1.5,
-        path:
-          "M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z",
-        anchor: {
-          x: 10,
-          y: 30
-        },
-        origin: {
-          x: 0,
-          y: 0
-        },
-        style: 5
-      },
-      iw: {
-        address: true,
-        desc: true,
-        email: true,
-        enable: true,
-        int_tel: true,
-        open: true,
-        open_hours: true,
-        photo: true,
-        tel: true,
-        title: true,
-        web: true
-      }
+      lat: 55.8716,
+      lng: 37.345,
+      vicinity: "Moscow"
     }
   ];
 

@@ -34,8 +34,8 @@
             Митинский некрополь
           </span>
           <div class="header__contacts">
-            <button type="button" class="header__phone"></button>
-            <button type="button" class="button header__email"></button>
+            <a href="tel:+74950889036" class="header__phone"></a>
+            <a href="mailto:info@memory.moscow" class="header__email"></a>
           </div>
         </div>
 
@@ -176,13 +176,13 @@
               <h3 class="price__name">Ниша для хранения одной урны</h3>
               <span class="price__cost">От 45000 р.</span>
               <div class="price__sub"></div>
-              <button class="price__btn">Оформить заявку</button>
+              <button class="price__btn js-open-modal">Оформить заявку</button>
             </div>
             <div class="price__item">
               <h3 class="price__name">Ниша для хранения двух урн</h3>
               <span class="price__cost">От 65000 р.</span>
               <span class="price__sub">Гравировка в подарок</span>
-              <button class="price__btn">Оформить заявку</button>
+              <button class="price__btn js-open-modal">Оформить заявку</button>
             </div>
             <div class="price__item">
               <h3 class="price__name">Ниша для хранения трех и более урн</h3>
@@ -190,7 +190,7 @@
               <span class="price__sub"
                 >Гравировка и гранитная плита в подарок</span
               >
-              <button class="price__btn">Оформить заявку</button>
+              <button class="price__btn js-open-modal">Оформить заявку</button>
             </div>
           </div>
         </div>
@@ -213,7 +213,9 @@
             </p>
           </div>
         </div>
-        <div class="place__img"></div>
+        <div class="place__img">
+          <img src="./img/place/place-img.png" alt="">
+        </div>
       </section>
       <!-- /.place -->
 
@@ -275,20 +277,40 @@
         <div class="footer__wrapper">
           <div class="footer__address">
             <p>Адрес: <br>
-              онентов требует от нас анализа благоприятных перспектив. И нет </p>
+            Пятницкое шоссе, 6км, строение 3</p>
           </div>
           <div class="footer__tel">
-            <a href="tel:+79000000000">+7 (900) 000 00 00</a>
-            <a href="tel:+79000000000">+7 (900) 000 00 00</a>
-            <a href="mailto:email@emai.com">Email@emai.com</a>
+            <a href="tel:+74950889036">+7 (495) 088-9036</a>
+            <a href="mailto:info@memory.moscow">info@memory.moscow</a>
           </div>
-          <button class="footer__btn btn">Оформить заявку</button>
+          <button class="footer__btn btn js-open-modal">Оформить заявку</button>
         </div>
       </div>
     </footer>
     <!-- /.footer -->
 
+    <div id="modal-form" class="modal mfp-hide">
+      <form action="/" class="form">
+        <div class="form-row">
+          <input type="text" class="form__input" placeholder="Ваше имя">
+        </div>
+        <div class="form-row">
+          <input type="tel" class="form__input" placeholder="Телефон">
+        </div>
+        <div class="form-row">
+          <input type="email" class="form__input" placeholder="Email">
+        </div>
+        <div class="form-row form-row--center">
+          <input type="checkbox" id="policy">
+          <label for="policy">Я согласен на обработку данных</label>
+        </div>
+        <div class="form-row form-row--center">
+         <button class="form-btn btn" type="submit">Отправить</button>
+        </div>
+      </form>
+    </div>
+
     <script src="js/scripts.min.js"></script>
-    <script src="js/map.js"></script>
+    <!-- <script src="js/map.js"></script> -->
   </body>
 </html>
