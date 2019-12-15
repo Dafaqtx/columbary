@@ -169,8 +169,12 @@
 .price-map
     width: 100%
     position: absolute
-    height: 330px
+    height: 430px
     top: 400px
+
+    @include respond-to(lg)
+        height: 330px
+        top: 400px
 
     &__wrapper
         max-width: 1024px
@@ -220,16 +224,29 @@
                 display: block
 
         &--1
-            bottom: 50px
-            left: 215px
+            bottom: 10px
+            left: 100px
+
+            @include respond-to(lg)
+                bottom: 50px
+                left: 215px
             
         &--2
-            top: 20px
-            left: 480px
+            top: 50px
+            left: 470px
+
+            @include respond-to(lg)
+                top: 20px
+                left: 480px
 
         &--3
-            top: 50px
-            right: 135px
+            top: 100px
+            right: -25px
+
+            @include respond-to(lg)
+                top: 50px
+                right: 130px
+           
 
     &__content
         display: none
