@@ -1078,6 +1078,119 @@ button {
   position: absolute;
 }
 
+.price-map {
+  width: 100%;
+  position: absolute;
+  height: 330px;
+  top: 400px;
+}
+
+.price-map__wrapper {
+  max-width: 1024px;
+  position: relative;
+  margin: auto;
+  height: 100%;
+}
+
+.price-map__item {
+  position: absolute;
+  cursor: pointer;
+}
+
+.price-map__item::before {
+  content: '';
+  width: 70px;
+  height: 70px;
+  background: 0 0;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: -23px;
+  left: -23px;
+  display: none;
+}
+
+.price-map__item::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  border: 2px solid #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.price-map__item:hover::before {
+  display: block;
+}
+
+.price-map__item:hover::after {
+  background: 0 0;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.price-map__item:hover .price-map__content {
+  display: block;
+}
+
+.price-map__item--1 {
+  bottom: 50px;
+  left: 215px;
+}
+
+.price-map__item--2 {
+  top: 20px;
+  left: 480px;
+}
+
+.price-map__item--3 {
+  top: 50px;
+  right: 135px;
+}
+
+.price-map__content {
+  display: none;
+  background: #fff;
+  padding: 30px;
+  margin-left: 30px;
+  margin-top: -150px;
+  position: absolute;
+  width: 200px;
+}
+
+.price-map__content::before {
+  content: '';
+  width: 100px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  left: -25px;
+  top: 118px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.price-map__name {
+  font-size: 27px;
+  line-height: 24px;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.price-map__cost {
+  display: block;
+  font-size: 14px;
+}
+
 .place {
   position: relative;
   padding-bottom: 550px;
@@ -1311,6 +1424,11 @@ button {
     margin-bottom: 40px;
   }
 
+  .about__desc {
+    font-size: 14px;
+    line-height: normal;
+  }
+
   .decision__text {
     font-size: 20px;
     line-height: 24px;
@@ -1507,8 +1625,7 @@ button {
   }
 
   .about__desc {
-    font-size: 12px;
-    line-height: normal;
+    font-size: 10px;
   }
 
   .decision {
@@ -1785,7 +1902,7 @@ button {
   }
 }
 
-@media only screen and (max-width:425px) {
+@media only screen and (max-width:630px) {
   .header {
     padding: 23px 0;
   }
@@ -1841,8 +1958,12 @@ button {
   }
 
   .about {
-    height: 690px;
+    height: 670px;
     margin-bottom: 70px;
+  }
+
+  .about .about__content {
+    margin-left: 0;
   }
 
   .about__title {
@@ -1859,6 +1980,10 @@ button {
 
   .decision__column {
     width: 100%;
+  }
+
+  .decision__text {
+    margin-left: 0;
   }
 
   .decision__text::after {
