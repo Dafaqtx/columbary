@@ -992,7 +992,6 @@ button {
   max-width: 1920px;
   position: relative;
   margin: auto;
-  margin-bottom: 180px;
 }
 
 .price__img {
@@ -1195,8 +1194,8 @@ button {
 
 .place {
   position: relative;
-  padding-bottom: 550px;
   padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .place__title {
@@ -1212,7 +1211,7 @@ button {
   margin-bottom: 50px;
 }
 
-.place__img {
+.place__img img {
   margin-left: auto;
 }
 
@@ -1529,8 +1528,7 @@ button {
   }
 
   .place {
-    padding-top: 100px;
-    padding-bottom: 250px;
+    padding-bottom: 150px;
   }
 
   .place__title {
@@ -1678,10 +1676,6 @@ button {
     max-width: 100px;
     top: 8px;
     left: -100%;
-  }
-
-  .place {
-    padding-bottom: 150px;
   }
 
   .place__desc {
