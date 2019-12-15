@@ -1211,6 +1211,10 @@ button {
   margin-bottom: 50px;
 }
 
+.place__img {
+  margin-left: auto;
+}
+
 .place__img img {
   margin-left: auto;
 }
@@ -1529,7 +1533,7 @@ button {
   }
 
   .place {
-    padding-bottom: 150px;
+    padding-bottom: 50px;
     padding-top: 50px;
   }
 
