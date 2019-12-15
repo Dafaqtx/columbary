@@ -1081,7 +1081,7 @@ button {
 .price-map {
   width: 100%;
   position: absolute;
-  height: 330px;
+  height: 430px;
   top: 400px;
 }
 
@@ -1141,18 +1141,18 @@ button {
 }
 
 .price-map__item--1 {
-  bottom: 50px;
-  left: 215px;
+  bottom: 10px;
+  left: 100px;
 }
 
 .price-map__item--2 {
-  top: 20px;
-  left: 480px;
+  top: 50px;
+  left: 470px;
 }
 
 .price-map__item--3 {
-  top: 50px;
-  right: 135px;
+  top: 100px;
+  right: -25px;
 }
 
 .price-map__content {
@@ -1504,6 +1504,26 @@ button {
 
   .price__btn::before {
     left: -130%;
+  }
+
+  .price-map {
+    height: 330px;
+    top: 400px;
+  }
+
+  .price-map__item--1 {
+    bottom: 50px;
+    left: 215px;
+  }
+
+  .price-map__item--2 {
+    top: 20px;
+    left: 480px;
+  }
+
+  .price-map__item--3 {
+    top: 50px;
+    right: 130px;
   }
 
   .place {
