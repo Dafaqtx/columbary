@@ -1,16 +1,12 @@
 // place
 .place
     position: relative
-    padding-bottom: 550px
     padding-top: 200px
+    padding-bottom: 200px
 
     @include respond-to(lg)
-        padding-top: 100px
-        padding-bottom: 250px
-
-    @include respond-to(md)
         padding-bottom: 150px
-
+        
     @include respond-to(xs)
         padding-top: 0
         padding-bottom: 40px
@@ -43,7 +39,8 @@
             margin-bottom: 40px
 
     &__img
-        margin-left: auto
+        img
+            margin-left: auto 
 
         @include respond-to(lg)
             max-width: 90%
