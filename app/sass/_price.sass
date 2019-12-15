@@ -165,3 +165,101 @@
             @include respond-to(sm)
                 max-width: 70px
                 left: calc(100% - 200px)
+
+.price-map
+    width: 100%
+    position: absolute
+    height: 330px
+    top: 400px
+
+    &__wrapper
+        max-width: 1024px
+        position: relative
+        margin: auto
+        height: 100%
+
+    &__item
+        position: absolute
+        cursor: pointer
+
+        &::before
+            content: ''
+            width: 70px
+            height: 70px
+            background: transparent
+            border: 2px solid #ffffff
+            border-radius: 50%
+            position: absolute
+            top: -23px
+            left: -23px
+            display: none
+
+        &::after
+            content: ''
+            width: 24px
+            height: 24px
+            background: #ffffff
+            border: 2px solid #ffffff
+            position: absolute
+            left: 0
+            top: 0
+            border-radius: 50%
+            transition: all .3s ease
+
+
+        &:hover
+            &::before
+                display: block
+
+            &::after
+                background: transparent
+                transition: all .3s ease
+
+
+            .price-map__content
+                display: block
+
+        &--1
+            bottom: 50px
+            left: 215px
+            
+        &--2
+            top: 20px
+            left: 480px
+
+        &--3
+            top: 50px
+            right: 135px
+
+    &__content
+        display: none
+        background: #fff
+        padding: 30px
+        margin-left: 30px
+        margin-top: -150px
+        position: absolute
+        width: 200px
+
+        &::before
+            content: ''
+            width: 100px
+            height: 2px
+            background: #ffffff
+            position: absolute
+            left: -25px
+            top: 118px
+            transform: rotate(-45deg)
+
+    &__name
+        font-size: 27px
+        line-height: 24px
+        font-weight: 500
+        display: block
+        margin-bottom: 10px
+
+    &__cost
+        display: block
+        font-size: 14px
+
+
+
