@@ -989,7 +989,9 @@ button {
 }
 
 .price {
+  max-width: 1920px;
   position: relative;
+  margin: auto;
   margin-bottom: 180px;
 }
 
