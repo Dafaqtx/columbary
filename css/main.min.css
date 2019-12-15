@@ -1530,6 +1530,7 @@ button {
 
   .place {
     padding-bottom: 150px;
+    padding-top: 50px;
   }
 
   .place__title {
