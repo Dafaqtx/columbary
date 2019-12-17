@@ -16,18 +16,22 @@
         font-size: 20px
         line-height: 16px
 
-    a   
+    &__contacts
+        display: flex
+        align-items: center
+
+    &__phone
+        color: $text
+        text-decoration: none
+        margin-right: 10px
+        font-weight: 500
+        font-size: 18px
+
+    &__email
         display: inline-block
         width: 26px
         height: 26px
         cursor: pointer
-
-
-    &__phone
-        margin-right: 10px
-        background: url('../img/header/phone.svg') center / cover no-repeat
-
-    &__email
         background: url('../img/header/email.svg') center / cover no-repeat
 
 .navigation
