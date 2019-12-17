@@ -614,19 +614,30 @@ template {
   line-height: 16px;
 }
 
-.header a {
+.header__contacts {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header__phone {
+  color: #000;
+  text-decoration: none;
+  margin-right: 10px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.header__email {
   display: inline-block;
   width: 26px;
   height: 26px;
   cursor: pointer;
-}
-
-.header__phone {
-  margin-right: 10px;
-  background: url(../img/header/phone.svg) center/cover no-repeat;
-}
-
-.header__email {
   background: url(../img/header/email.svg) center/cover no-repeat;
 }
 
@@ -1995,6 +2006,10 @@ button {
 @media only screen and (max-width:630px) {
   .header {
     padding: 23px 0;
+  }
+
+  .header__phone {
+    font-size: 12px;
   }
 
   .container {
